@@ -37,6 +37,8 @@ public class ch3notes
 
        for(Week day: Week.values())
         System.out.println(day);
+       for(String student: people)
+        System.out.println(student);
        
 
 
@@ -72,16 +74,29 @@ public class ch3notes
     System.out.println("After the loop \n k= " +k +"\tj= " +j);
 
 
-/*
-    Scanner scanFile = new Scanner(new File("people.txt"));
+/**/
+    Scanner scanFile = new Scanner(new File("speeches\\people.txt"));
     String name, address, phone;
-
     while(scanFile.hasNext())
     {
-
+        name = scanFile.next();
+        address = scanFile.next();
+        phone = scanFile.next();
+        
+        System.out.println(name + " " + phone + " " + address);
     }
-
-
+    
+    Scanner scanFile2 = new Scanner(new File("data/Debate12016.txt"));
+    int count = 0;
+    String word;
+    while(scanFile2.hasNext())
+    {
+        word = scanFile2.next();
+        if(word.equalsIgnoreCase("obama"))
+            count++;
+    }       
+    
+    System.out.println(count + " num of time trump said");
 
 /**/
 
