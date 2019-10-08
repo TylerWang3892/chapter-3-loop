@@ -8,6 +8,7 @@ public class CSU_problem
     {
         Scanner keyboard = new Scanner(System.in);
         
+        System.out.println("enter an integer.");
         int number = keyboard.nextInt();
         int count = 0;
         int nextLine = 0;
@@ -40,6 +41,18 @@ public class CSU_problem
             
         System.out.println("There are: " + count + " members in the set");
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     static int numDig(int a_number)
     {
         int number = a_number;

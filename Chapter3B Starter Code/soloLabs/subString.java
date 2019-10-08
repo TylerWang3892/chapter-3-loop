@@ -8,6 +8,7 @@ public class subString
     {
         Scanner keyboard = new Scanner(System.in);
         
+        System.out.println("Enter a string");
         String word = keyboard.nextLine();
         
         for(int a = 0; a < word.length(); a++)
