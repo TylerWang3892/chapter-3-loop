@@ -9,6 +9,6 @@ public class Program3_6
         String largeNumber = keyboard.nextLine();
         
         for(int a = 0; a < largeNumber.length(); a++)
-            
+           
     }
 }
