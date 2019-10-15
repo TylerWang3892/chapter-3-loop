@@ -12,14 +12,19 @@ public class ParksideTriangle
         int seed = keyboard.nextInt();
         
         int nextNum;
-        for(int a = size; a >= 1; a--)
+        
+        for(int a = size; a > 0; a--)
         {
             nextNum = seed;
-            for(int b = a; a >= b; b++)
-            {
-                System.out.print(nextNum);
-                nextNum += ((b+1) - nextNum);
+            for(int b = 0; b < a; b++)
+            {    
+                System.out.print(nextNum + " ");
+                nextNum += b + 1;
+                if(nextNum > 9)
+                    nextNum = (nextNum%10) + 1;
             }
+            System.out.println();
+            seed += (a+2) - seed;
         }
     }
 }
