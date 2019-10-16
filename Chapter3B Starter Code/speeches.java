@@ -4,11 +4,11 @@ public class speeches
 {
     public static void main()
     {
-        Scanner file1 = new Scanner(System.in);
-        Scanner file2 = new Scanner(System.in);
-        Scanner file3 = new Scanner(System.in);
-        Scanner file4 = new Scanner(System.in);
-        Scanner file5 = new Scanner(System.in);
-        Scanner file6 = new Scanner(System.in);
+        Scanner file1 = new Scanner();
+        Scanner file2 = new Scanner();
+        Scanner file3 = new Scanner();
+        Scanner file4 = new Scanner();
+        Scanner file5 = new Scanner();
+        Scanner file6 = new Scanner();
     }
 }

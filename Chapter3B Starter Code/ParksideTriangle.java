@@ -16,15 +16,19 @@ public class ParksideTriangle
         for(int a = size; a > 0; a--)
         {
             nextNum = seed;
+            for(int b = 0; b < size - a; b++)
+                System.out.print(" ");
             for(int b = 0; b < a; b++)
             {    
-                System.out.print(nextNum + " ");
-                nextNum += b + 1;
+                System.out.print(nextNum);
+                nextNum += b + (size + 1) - a;
                 if(nextNum > 9)
-                    nextNum = (nextNum%10) + 1;
+                    nextNum = (nextNum%10) + (nextNum/10);
             }
             System.out.println();
-            seed += (a+2) - seed;
+            seed += (size+2) - a;
+            if(seed > 9)
+                    seed = (seed%10) + (seed/10);
         }
     }
 }

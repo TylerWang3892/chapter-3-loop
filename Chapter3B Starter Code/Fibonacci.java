@@ -6,14 +6,16 @@ public class Fibonacci
     {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Enter the amount of digits you want to output.");
-        int previous = 0, current = 1;
-        System.out.println("0, ");
-        for(int a = keyboard.nextInt() - 2; a > 0; a--)
+        int previous = 1, twoBefore = 0, buffer = 0;
+        int a = keyboard.nextInt() - 2;
+        System.out.print(twoBefore + " ");
+        System.out.print(previous + " ");
+        for(a = a; a > 0; a--)
         {
-            System.out.println(current + previous + ", ");
-            previous = current;
-            current += previous;
+            System.out.print(twoBefore + previous + " ");
+            buffer = twoBefore;
+            twoBefore = previous;
+            previous = buffer + twoBefore;
         }
-        System.out.println(current + previous);
     }
 }
