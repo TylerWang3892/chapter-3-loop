@@ -12,13 +12,9 @@ public class Palendrome
         boolean pallendrome = true;
         String part1 = "d", part2 = "d";
         System.out.print(phrase);
-        
-        while(phrase.indexOf(' ') != -1)
-        {
-            part1 = phrase.substring(0 , phrase.indexOf(' '));
-            part2 = phrase.substring(phrase.indexOf(' '));
-            //phrase = part1 + part2;
-        }
+
+        phrase = phrase.replaceAll(" ", "");
+        phrase = phrase.toUpperCase();
         
         for(int a = 0; a <= phrase.length()/2; a++)
             if(phrase.charAt(a) != phrase.charAt((phrase.length() - 1) - a))
