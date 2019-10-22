@@ -21,9 +21,9 @@ public class Program3_6
             if(largeNumber.charAt(a) == '0')
                 zero++;
             else if(largeNumber.charAt(a) % 2 == 1)
-                even++;
-            else if(largeNumber.charAt(a) % 2 == 0)
                 odd++;
+            else if(largeNumber.charAt(a) % 2 == 0)
+                even++;
         }
                 
         System.out.println("Odd: " + odd + "\t Even: " + even + "\t Zero: " + zero);

@@ -3,9 +3,9 @@
  * 
  * Author: Tyler Wang
  * 
- * Description: Analizes speeches from 3 different time periods
- *  for word length, word count, and the occurence of different 
- *  words.
+ * Description: Analizes speeches from 3 different time 
+ *  periodsfor word length, word count, and the occurence 
+ *  of different words.
  ***********************************************************/
 
 import java.util.Scanner;
