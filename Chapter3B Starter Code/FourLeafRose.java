@@ -1,33 +1,27 @@
-
-/**
- * Write a description of class FourLeafRose here.
- *
- * @author (your name)
- * @version (a version number or a date)
+/*************************************************
+ * Title: FourLeafRose.java     Date: 2019/10/20\
+ * 
+ * Author: Tyler Wang
+ * 
+ * Desciption: Draws a four leaf rose.
  */
+import TurtleGraphics.StandardPen;
+import java.lang.Math;
+import java.awt.*;
 public class FourLeafRose
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class FourLeafRose
-     */
-    public FourLeafRose()
+    public static void main()
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        StandardPen draw = new StandardPen();
+        
+        //moves pen inplace
+        draw.setColor(Color.WHITE);
+        draw.move(100, 0);
+        
+        //prints out from 0 to 2PI in 100 steps
+        draw.setColor(Color.BLACK);
+        for(int a = 1; a < 100; a++)
+            draw.move(Math.cos((a*3.6*Math.PI)/180) * Math.cos(2 * (a*3.6*Math.PI)/180) *100,
+                Math.sin((a*3.6*Math.PI)/180) * Math.cos(2 * (a*3.6*Math.PI)/180)*100);
     }
 }

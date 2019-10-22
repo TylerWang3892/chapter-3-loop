@@ -1,4 +1,11 @@
-
+/***********************************************
+ * Title: Program3_6.java   Date: 2019/10/20
+ * 
+ * Author: Tyler Wang
+ * 
+ * Descrpition: Prints out the amount of zeros
+ *  even, and odd number in a sting.
+ */
 import java.util.Scanner;
 
 public class Program3_6
