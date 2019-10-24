@@ -20,10 +20,10 @@ public class speeches
         
         //File file = new File("speeches/tjefferson.txt");
         //File file = new File("speeches/taft.txt");
-        //File file =  new File("speeches/obama_inaugural_speach.txt");
+        File file =  new File("speeches/obama_inaugural_speach.txt");
         //File file = new File("speeches/Jadams inaugural speech.txt");
         //File file = new File("speeches/gwbush.txt");
-        File file = new File("speeches/fillmore.txt");
+        //File file = new File("speeches/fillmore.txt");
         
         Scanner iterator = new Scanner(file);
         
